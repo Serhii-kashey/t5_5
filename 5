@@ -1,0 +1,22 @@
+#Task2_1
+n1=input("Please, input 8 number's using spaces as spliter and press enter:")
+n2=n1.replace('-',"")
+nn=n2.split(" ")
+lengh=(len(nn))
+n=n1.split(" ")
+s=0
+ss=0
+ssg=0
+for i in n:
+    si=float(i)
+   
+    if si > 0 :
+        ss+=1
+    elif si < 0:
+        s+=1
+    else:
+        lengh-=1        
+positive=ss*100/lengh
+negative=s*100/lengh
+print("Perсent of negative numbers:  %f   " %(negative))
+print("Perсent of positive numbers:  %f   " %(positive))
